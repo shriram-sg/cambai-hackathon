@@ -1,16 +1,20 @@
-<<<<<<< Updated upstream
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms))
 }
 
 async function tts(text) {
     const inputVal = document.getElementById("myInput")
+    const selectVal = document.getElementById("languages")
+    const contentFetcher = document.getElementById("contentFetcher")
+
     console.log(inputVal)
+    console.log(selectVal.value)
+    console.log(contentFetcher)
 
     const options = {
         method: 'POST',
         headers: { 'x-api-key': '44ae73e5-6594-4b11-8bfe-fced6eff0edf', 'Content-Type': 'application/json' },
-        body: `{ "text": "${inputVal.value}", "voice_id": 8776, "language": 1, "gender": 0, "age": 123 }`
+        body: `{ "text": "${inputVal.value}", "voice_id": 8776, "language": ${selectVal.value}, "gender": 0, "age": 123 }`
     };
 
     let response = await fetch('https://cors-anywhere.herokuapp.com/https://client.camb.ai/apis/tts', options)
@@ -60,6 +64,7 @@ async function tts(text) {
 
 document.getElementById("button").addEventListener('click', () => tts('hi'))
 
+const contentFetcher = document.getElementById("contentFetcher")
+console.log(contentFetcher)
 
-=======
->>>>>>> Stashed changes
+

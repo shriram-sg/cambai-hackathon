@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 let language = sourceLanguagesData[i].language;
 
                 let opt = document.createElement("option");
-                opt.value = language; // Assign value to the option
+                opt.value = sourceLanguagesData[i].id; // Assign value to the option
                 opt.innerHTML = language;
 
                 languagesDropdown.appendChild(opt);

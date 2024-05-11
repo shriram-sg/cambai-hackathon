@@ -11,7 +11,11 @@
       "matches": [
         "<all_urls>"
       ],
-      "js": []
+      "js": [
+        "node_modules/@webcomponents/custom-elements/custom-elements.min.js",
+        "src/content.js",
+        "src/medium-highlighter"
+      ]
     }
   ]
 }
