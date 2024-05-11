@@ -3,6 +3,9 @@
   "name": "Hello World!",
   "description": "This extension shows a Hello World message!",
   "version": "1.0",
+  "permissions": [
+    "storage"
+  ],
   "browser_action": {
     "default_popup": "window.html"
   },
@@ -14,7 +17,7 @@
       "js": [
         "node_modules/@webcomponents/custom-elements/custom-elements.min.js",
         "src/content.js",
-        "src/medium-highlighter"
+        "src/medium-highlighter.js"
       ]
     }
   ]

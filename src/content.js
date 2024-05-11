@@ -1,5 +1,6 @@
 const mediumHighlighter = document.createElement("medium-highlighter");
 mediumHighlighter.id = "contentFetcher"
+
 document.body.appendChild(mediumHighlighter);
 
 const setMarkerPosition = (markerPosition) =>

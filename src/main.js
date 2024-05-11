@@ -60,11 +60,10 @@ async function tts(text) {
     playSound.start(ctx.currentTime);
 
     console.log(inputVal.value)
+
 }
 
 document.getElementById("button").addEventListener('click', () => tts('hi'))
 
-const contentFetcher = document.getElementById("contentFetcher")
-console.log(contentFetcher)
 
 
