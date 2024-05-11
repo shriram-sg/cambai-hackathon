@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms))
 }
@@ -60,3 +61,5 @@ async function tts(text) {
 document.getElementById("button").addEventListener('click', () => tts('hi'))
 
 
+=======
+>>>>>>> Stashed changes
