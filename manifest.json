@@ -1,7 +1,11 @@
 {
   "manifest_version": 2,
+  "name": "Hello World!",
+  "description": "This extension shows a Hello World message!",
   "version": "1.0",
-  "name": "Test",
+  "browser_action": {
+    "default_popup": "window.html"
+  },
   "content_scripts": [
     {
       "matches": [
