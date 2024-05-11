@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+        font-family: "Josefin Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px;
+        background-color: #171717;
+        width: 300px;
+        border: 2px solid #8b5cf6;
+    }
+
+    header h3,
+    #language-form label {
+        color: #8b5cf6;
+    }
+
+    #language-form input {
+        padding: 5px;
+    }
+</style>
+
+<script type="module" src="./src/main.js"></script>
+
+<body>
+    <header>
+        <h3>Camb AI Translate</h3>
+    </header>
+
+    <form id="language-form">
+        <label for="languages">Choose a language: </label>
+        <select name="languages" id="languages">
+            <option value="English">English</option>
+            <option value="Hindi">Hindi</option>
+            <option value="Arabic">Arabic</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Submit">
+
+        <input id="myInput" placeholder="enter text" name="testval" />
+        <button id="button" type="button">Test</button>
+    </form>
+
+</body>
+
+</html>
